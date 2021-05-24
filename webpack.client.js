@@ -3,8 +3,8 @@ const path = require('path');
 module.exports = {
   entry: ['@babel/polyfill', './src/client.js'],
   output: {
-    filename: 'bundle.js',
-    path: path.resolve(__dirname, './dist'),
+    filename: 'client.js',
+    path: path.resolve(__dirname, './build'),
   },
   module: {
     rules: [

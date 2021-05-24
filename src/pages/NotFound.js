@@ -1,9 +1,9 @@
 import React from 'react';
 
-const NotFount = () => (
-  <span>無此頁面</span>
+const NotFound = () => (
+  <span>NOT FOUND</span>
 );
 
 export default {
-  component: NotFount,
+  component: NotFound,
 };

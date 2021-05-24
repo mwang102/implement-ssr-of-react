@@ -6,7 +6,7 @@ module.exports = {
   entry: ['@babel/polyfill', './src/server.js'],
   externals: [webpackNodeExternals()],
   output: {
-    filename: 'bundle.js',
+    filename: 'server.js',
     path: path.resolve(__dirname, './build'),
   },
   module: {

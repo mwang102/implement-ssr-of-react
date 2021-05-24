@@ -1,21 +1,20 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { renderRoutes } from 'react-router-config';
-import Header from './components/Header';
 
-const App = ({ route }) => (
-  <div>
-    <Header />
-    {renderRoutes(route.routes)}
-  </div>
-);
+const App = () => {
+  console.log('running App----')
 
-App.propTypes = {
-  route: PropTypes.objectOf(PropTypes.any),
-};
+  const logMessage = () => {
+    console.log('logging message')
+  }
 
-App.defaultProps = {
-  route: null,
-};
+  return (
+    <div> 
+      <h1> App </h1>
+      <button onClick={logMessage}>Say Hello Back!</button>
+    </div>
+  )
+}
 
-export default { component: App };
+export default App;

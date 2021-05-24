@@ -5,13 +5,9 @@ import { renderRoutes } from 'react-router-config';
 import { Provider } from 'react-redux';
 import Routes from './Routes';
 import createStore from './store';
+import App from './App';
 
-
-ReactDOM.render(
-  <Provider store={createStore()}>
-    <BrowserRouter>
-      {renderRoutes(Routes)}
-    </BrowserRouter>
-  </Provider>,
+ReactDOM.hydrate(
+    <App />,
   document.getElementById('root'),
 );
